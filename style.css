@@ -1,0 +1,98 @@
+
+body{   
+   background-image:linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.5)),url("back.jpg");
+
+}
+.head1 {
+ font-family: 'Sucrose Bold Two';
+  margin: auto;
+  font-size: 70px;
+  font-weight: 500;
+  text-allign: center;
+  color: #feffff;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+}
+x
+@keyframes cursor{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #feffff;}
+}
+
+@keyframes typing{
+  0%{ width: 0ch} /*Text is hidden*/
+  30%{ width: 11ch;} /*The enitre header will be typed out*/
+  80%{ width: 11ch;} /*Text stays visible*/
+  90%{ width: 0ch;} /*Text is deleted*/
+  100%{ width: 0ch;} /*Text stays hidden*/
+}
+
+
+
+.top {
+    background: #00000);
+    height: 2cm; 
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color:white;
+    font-size:30px;
+}
+
+.container {
+  padding:20px;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: ;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.panel {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 50%;
+    height: 30%;
+    background: rgb(59, 58, 58);
+    border:4px,black;
+}
+
+
+
+button {
+    color: #000;
+    background: white;
+  font-size:15px;
+  font-weight:20px;
+}
+.form__input {
+  padding:20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  font-size: 1.2rem;
+	margin: 0 auto;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 50%;
+  display: block;
+  border-bottom: 0.3rem solid transparent;
+  transition: all 0.3s;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+}
+

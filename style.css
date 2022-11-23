@@ -10,7 +10,7 @@ body{
   font-weight: 500;
   text-allign: center;
   color: #feffff;
-  border-right: 4px solid #000;
+  border-right: 4px solid #ffffff;
   animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
   white-space: nowrap;
   overflow: hidden;

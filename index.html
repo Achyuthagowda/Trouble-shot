@@ -38,7 +38,7 @@
 <script>
     const checkPassword = () => {
         const v = document.getElementById("password").value;
-        const p = Array.from(v).map(a => 0xace + a.charCodeAt(0));
+        const p = Array.from(v).map(a => 0xCafe + a.charCodeAt(0));
 
         if (p[0] === 52037 &&
             p[6] === 52081 &&

@@ -1,0 +1,40 @@
+.head1 {
+ font-family: 'Sucrose Bold Two';
+  margin: auto;
+  font-size: 70px;
+  font-weight: 500;
+  text-allign: center;
+  color: #000;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
+}
+x
+@keyframes cursor{
+  0%, 100%{border-color: transparent;}
+  50%{border-color: #000;}
+}
+
+@keyframes typing{
+  0%{ width: 0ch} /*Text is hidden*/
+  30%{ width: 11ch;} /*The enitre header will be typed out*/
+  80%{ width: 11ch;} /*Text stays visible*/
+  90%{ width: 0ch;} /*Text is deleted*/
+  100%{ width: 0ch;} /*Text stays hidden*/
+}
+.par1{
+  border-style: dashed;
+  border-radius:25px;x
+  border-color:#7bd0e5ff;
+  border-width: 2px;
+  margin-right:450px;
+  margin-left:25px;
+ 
+}
+.head1{
+  padding:10px;
+}
+.part1{
+  padding:25px;
+}

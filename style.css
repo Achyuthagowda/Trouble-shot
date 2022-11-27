@@ -5,15 +5,17 @@
   box-sizing: border-box;
 
 }
-
-.container {
-  width: 100%;
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 50, 0, 0.8), rgba(0, 0, 50, 0.8));
-  background-position: center;
-  background-size: cover;
-  position: relative;
-
+.head1 {
+ font-family: 'Sucrose Bold Two';
+  margin: auto;
+  font-size: 70px;
+  font-weight: 500;
+  text-allign: center;
+  color: #feffff;
+  border-right: 4px solid #000;
+  animation: cursor 1s infinite step-end, typing 15s infinite steps(16);
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .form-box {

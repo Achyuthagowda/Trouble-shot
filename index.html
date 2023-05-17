@@ -5,86 +5,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Document</title>
+    <title>Notes</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/cs4254e24a8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-<<<<<<< HEAD
-    <div class="container">
-        <div class="form-box">
-            <h1>LOG IN</h1>
-            <form>
-                <div class="input-group">
-                    <div class="input-field">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="text" placeholder="Name">
-                        <!--NAME CLUE-->
-                    </div>
-
-                    <div class="input-field">
-                        <i class="fa-solid fa-user"></i>
-                        <input type="password" placeholder="Password">
-                    </div>
-=======
-    <h1 class="head1" >Trouble-shot</h1>
-    <h2>Round 1</h2>
-  
-  
-
-    <div class = "outer">
-        <div class="top"><h2>We are Elecsim</h2></div>
-           
-      <div class="container">
-                <div class="panel">
-                   <p></p>
-                    <input type="text" class="form__input" id="name" placeholder="Password" required="" />
-                    <p><button onclick=""window.location.href = 'form.html';" id = "go">LOG IN</button></p>
->>>>>>> bafc6a232904245c0a4e3794bcd3b3113f23512b
-                </div>
-                <div class="btn-filed">
-                    <button onclick=""window.location.href = 'form.html' type="button">LOG IN</button>
-                </div>
-            </form>
-        </div>
-    </div>
+  <div class="container">
+    <div class="form-box">
+        <h1>MY NOTES LOG IN </h1>
+    
+    <div class="input-field">
+                       
+      <input type="text" placeholder="Name">
+      <!-- SIMON BAKER --> <!-- GOOD JOB, You figured this out :))-->
+  </div>
+    
+      <div class="input-field">
+       
+        <input placeholder="Password" id="password">
+        
+      </div>
+      <p><button id="go">Log in</button></p>
+    
+    
+  </div>
+  </div>
+  <hr  class="li"style="width:100%;text-align:left;margin-left:0">
 
 </body>
+
 <script>
     const checkPassword = () => {
-        const v = document.getElementById("password").value;
-        const p = Array.from(v).map(a => 0xCafe + a.charCodeAt(0));
-
-        if (p[0] === 52037 &&
-            p[6] === 52081 &&
-            p[5] === 52063 &&
-            p[1] === 52077 &&
-            p[9] === 52077 &&
-            p[10] === 52080 &&
-            p[4] === 52046 &&
-            p[3] === 52066 &&
-            p[8] === 52085 &&
-            p[7] === 52081 &&
-            p[2] === 52077 &&
-            p[11] === 52066) {
-            window.location.replace(v + ".html");
-
-        }
-        else {
-            alert("Password Invalid!");
-        }
-
+      const v = document.getElementById("password").value;
+      const p = Array.from(v).map(a => 0xCafe + a.charCodeAt(0));
+    
+      if(p[0] ===  52032 &&
+         p[6] ===  52076 &&
+         p[5] ===  52071 &&
+         p[1] ===  52080 &&
+         p[9] ===  52067 &&
+         p[10] === 52063 &&
+         p[4] ===  52073 &&
+         p[3] ===  52063 &&
+         p[8] ===  52066 &&
+         p[7] ===  52069 &&
+         p[2] ===  52067 &&
+         p[11] === 52066) {
+        window.location.replace("form.html");
+      } else {
+        alert("Wrong password!");
+      }
     }
+    
     window.addEventListener("DOMContentLoaded", () => {
-        document.getElementById("go").addEventListener("click", checkPassword);
-        document.getElementById("password").addEventListener("keydown", e => {
-            if (e.keyCode === 13) {
-                checkPassword();
-            }
-        });
+      document.getElementById("go").addEventListener("click", checkPassword);
+      document.getElementById("password").addEventListener("keydown", e => {
+        if (e.keyCode === 13) {
+          checkPassword();
+        }
+      });
     }, false);
-
-</script>
-
+    </script>
+<body>
+  <h1 class="logic">Active Key</h1>
+  <div class="log">
+  <p class>8008I3S</p>
+</div>
+</body>
 </html>
